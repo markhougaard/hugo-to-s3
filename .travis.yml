@@ -1,0 +1,31 @@
+# Install the apt prerequisites
+addons:
+  apt:
+    packages:
+      - python-pygments
+
+# Clean and don't fail
+install:
+  - rm -rf public || exit 0
+
+# Build the website
+script:
+  - hugo
+
+# Deploy to AWS S3
+deploy:
+  provider: s3
+  access_key_id: $ACCESS_KEY_ID
+  bucket: $BUCKET
+  secret_access_key:
+    secure: $SECRET_ACCESS_KEY
+  acl: public_read
+  skip_cleanup: true
+  local_dir: public
+  on:
+    branch: master
+    
+notifications:
+  email:
+    on_failure: mark@marks.dk
+    on_success: mark@marks.dk
