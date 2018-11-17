@@ -10,7 +10,7 @@ install:
 
 # Build the website
 script:
-  - hugo
+  - binaries/hugo --theme=ananke
 
 # Deploy to AWS S3
 deploy:
