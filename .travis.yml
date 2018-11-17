@@ -24,8 +24,3 @@ deploy:
   local_dir: public
   on:
     branch: master
-    
-notifications:
-  email:
-    on_failure: mark@marks.dk
-    on_success: mark@marks.dk
