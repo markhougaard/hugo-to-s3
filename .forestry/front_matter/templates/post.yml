@@ -20,3 +20,5 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+pages:
+- content/posts/test-from-forestry.md
