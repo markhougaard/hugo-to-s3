@@ -12,13 +12,5 @@ fields:
   config:
     date_format: DD/MM/YYYY
     required: true
-- type: textarea
-  name: post
-  label: Post
-  config:
-    required: true
-    wysiwyg: true
-    schema:
-      format: markdown
 pages:
 - content/posts/test-from-forestry.md
