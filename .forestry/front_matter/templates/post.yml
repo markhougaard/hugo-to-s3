@@ -13,4 +13,5 @@ fields:
     date_format: DD/MM/YYYY
     required: true
 pages:
+- content/posts/maps-test.md
 - content/posts/test-from-forestry.md
